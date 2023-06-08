@@ -80,8 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <option value="<?php echo $sinhvien['id']; ?>"><?php echo $sinhvien['ten']; ?></option>
             <?php endforeach; ?>
         </select>
-
-
         <button class="btn btn-success">Cập nhật thông tin</button>
     </form>
 </div>

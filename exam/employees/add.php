@@ -116,7 +116,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </div>
     </div>
     <input onclick="return confirm('Are u sure?')" type="submit" value="Thêm Mới">
-    </form>
+</form>
+<form action="../index.php">
+<input class="btn btn-primary" type="submit" value="Thoát">
+</form>
 </body>
 </html>
 
