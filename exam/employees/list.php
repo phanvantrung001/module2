@@ -69,23 +69,23 @@ $rows = $mysql->fetchAll();
             ?>
 
             <?php if ($current_page > 1) : ?>
-                <a class="page-link" href="http://localhost/exam/index.php?page=<?php echo $current_page - 1; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>" aria-label="Trang trước">
+                <a class="page-link" href="index.php?page=<?php echo $current_page - 1; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>" aria-label="Trang trước">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             <?php endif; ?>
 
             <?php for ($i = $start_page; $i <= $end_page; $i++) : ?>
                 <?php if ($i == $current_page) : ?>
-                    <a class="page-link active" href="http://localhost/exam/index.php?page=<?php echo $i; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>"><?php echo $i; ?></a>
+                    <a class="page-link active" href="index.php?page=<?php echo $i; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>"><?php echo $i; ?></a>
                 <?php else : ?>
-                    <a class="page-link" href="http://localhost/exam/index.php?page=<?php echo $i; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>">
+                    <a class="page-link" href="index.php?page=<?php echo $i; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>">
                         <?php echo $i; ?>
                     </a>
                 <?php endif; ?>
             <?php endfor; ?>
 
             <?php if ($current_page < $total_pages) : ?>
-                <a class="page-link" href="http://localhost/exam/index.php?page=<?php echo $current_page + 1; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>" aria-label="Trang sau">
+                <a class="page-link" href="index.php?page=<?php echo $current_page + 1; ?><?php if (!empty($search)) echo '&search=' . urlencode($search); ?><?php if (!empty($result['search_s1'])) echo '&s1=' . urlencode($result['search_s1']); ?>" aria-label="Trang sau">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             <?php endif; ?>
